@@ -28,6 +28,8 @@ body {
 h1 {
   letter-spacing: 1px;
   margin: 0;
+  font-size: 72px;
+    color: #6f6fff;
 }
 
 h3 {

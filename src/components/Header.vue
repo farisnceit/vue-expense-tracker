@@ -1,3 +1,14 @@
 <template>
-    <h2>Expense Tracker</h2>
+    <h2>{{ title }}</h2>
 </template>
+<script setup>
+
+const props = defineProps({
+    title : {
+        default : "tracker",
+        type : String
+    }
+})
+
+
+</script>
