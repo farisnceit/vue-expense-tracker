@@ -3,7 +3,7 @@
   <Balance/>
   <div class="container">
       <IncomeExpense/>
-      <TransactionHistory/>
+      <TransactionHistory :transactions="transactions" />
       <AddTransaction/>
   </div>
 </template>
@@ -13,4 +13,12 @@
   import IncomeExpense from './components/IncomeExpense.vue';
   import TransactionHistory from './components/TransactionHistory.vue';
   import AddTransaction from './components/AddTransaction.vue';
+  import { ref } from 'vue';
+
+  const transactions = ref([{
+    id: 12,
+    title : "Shopping",
+    amount : -20
+  }])
+
 </script>
